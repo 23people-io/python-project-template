@@ -1,0 +1,32 @@
+### Boolean Operators
+GET http://localhost:8000/examples/boolean-operators
+
+### Dictionaries
+GET http://localhost:8000/examples/dictionaries
+
+### For-While Loops
+GET http://localhost:8000/examples/for-while
+
+### Functional Programming
+GET http://localhost:8000/examples/functional
+
+### Lists
+GET http://localhost:8000/examples/lists
+
+### OOP
+GET http://localhost:8000/examples/oop
+
+### Operators
+GET http://localhost:8000/examples/operators
+
+### Sets
+GET http://localhost:8000/examples/sets
+
+### Strings
+GET http://localhost:8000/examples/strings
+
+### Type Hints
+GET http://localhost:8000/examples/type-hints
+
+### Types
+GET http://localhost:8000/examples/types

@@ -1,8 +1,9 @@
-def main():
-    print("Hello from python-project-template!")
-    a: str = "a"
-    print(a + 1)  # This will cause a type error, which should be caught by Ruff and Ty
+from fastapi import FastAPI
+from routes.examples import router as api_router
 
+app = FastAPI(
+    title="Python Project Template API",
+    version="1.0.0",
+)
 
-if __name__ == "__main__":
-    main()
+app.include_router(api_router)

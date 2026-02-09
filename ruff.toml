@@ -1,4 +1,4 @@
-line-length = 88 # Max line length for code
+line-length = 100 # Max line length for code
 indent-width = 4
 
 [lint]
