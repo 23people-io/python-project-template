@@ -23,3 +23,7 @@ extend-select = [
     "S",        # disallow things like "exec"
     "T20"       # disallow print statements
 ]
+
+ignore = [
+    "S101"      # Ignore asserting statements that use "assert" is okay in tests
+] 
