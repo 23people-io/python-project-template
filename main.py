@@ -1,11 +1,8 @@
 def main():
     print("Hello from python-project-template!")
     a: str = "a"
+    print(a + 1)  # This will cause a type error, which should be caught by Ruff and Ty
 
 
 if __name__ == "__main__":
     main()
-    try:
-        print(1 / 0)
-    except ZeroDivisionError as e:
-        print(f"Caught an exception: {e}")
