@@ -16,6 +16,7 @@ repos:
         name: ty check
         entry: uvx ty check .
         language: system
+        types: [python]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1

@@ -3,3 +3,4 @@ cd python-project-template
 uv venv
 source .venv/bin/activate
 uv sync
+pre-commit install
