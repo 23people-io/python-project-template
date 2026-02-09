@@ -1,0 +1,2 @@
+[rules]
+division-by-zero = "error"
