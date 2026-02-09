@@ -1,0 +1,17 @@
+{
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "sonarlint.connectedMode.project": {
+        "connectionId": "23people-io",
+        "projectKey": "23people-io_python-project-template"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+    },
+    "python.analysis.typeCheckingMode": "standard",
+}
