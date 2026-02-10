@@ -35,13 +35,13 @@ This is a template for a Python project. It includes a basic structure for organ
 Alternatively, you can run all commands from step 2 to step 3 with a single command:
 
 ```bash
-./setup.sh
+   ./setup.sh
 ```
 
 1. Create a `.env` file in the root directory of the project:
 
 ```bash
-PORT=8000
+   PORT=8000
 ```
 
 ## Usage
@@ -49,13 +49,13 @@ PORT=8000
 To run the main application, use the following command:
 
 ```bash
-uv run --env-file .env python run.py main.py
+   uv run --env-file .env python run.py main.py
 ```
 
 Or alternatively, you can run the application with a single command:
 
 ```bash
-./run.sh
+   ./run.sh
 ```
 
 ## Testing
@@ -63,13 +63,13 @@ Or alternatively, you can run the application with a single command:
 To run the tests, use the following command:
 
 ```bash
-uv run pytest --capture=no
+   uv run pytest --capture=no
 ```
 
 Or alternatively, you can run the tests with a single command:
 
 ```bash
-./test.sh
+   ./test.sh
 ```
 
 ## Linting
@@ -77,13 +77,13 @@ Or alternatively, you can run the tests with a single command:
 To lint the code, use the following command:
 
 ```bash
-uv run pre-commit run --all-files
+   uv run pre-commit run --all-files
 ```
 
 Or alternatively, you can run the linter with a single command:
 
 ```bash
-./lint.sh
+   ./lint.sh
 ```
 
 ## License
