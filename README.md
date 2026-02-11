@@ -168,6 +168,14 @@ cd mi-proyecto
 uv add --dev ruff ty pytest
 ```
 
+Si deseas agregar chequeo de "Conventional Commits"
+
+```bash
+uv add pre-commit
+source .venv/bin/activate
+pre-commit install
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
