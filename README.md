@@ -13,6 +13,7 @@ El proyecto incluye:
 - Linter y Formatter: [ruff](https://docs.astral.sh/ruff/)
 - Chequeador de Tipos: [ty](https://docs.astral.sh/ty/)
 - Verifica que los mensajes de commit cumplan con ["Conventional Commits"](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
+- Se integra con Sonar a través del archivo [.sonarcloud.properties](.sonarcloud.properties).
 - Incluye plugins sugeridos para el trabajo con VsCode
 
 ## Comenzar
