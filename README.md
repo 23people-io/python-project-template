@@ -5,7 +5,7 @@ Esta plantilla es un ejemplo de la estructura básica de un proyecto en Python.
 
 Forma parte de la presentación de ["Introducción a Python"]([LICENSE](https://www.canva.com/design/DAHA1PesQ2o/EUIVCJNTx7DmD0sqrdzqVA/view?utm_content=DAHA1PesQ2o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1e9507b8c7)) realizada en 23people para desarrolladores con experiencia en otros lenguajes.
 
-En la carpeta /examples se pueden encontrar algunos ejemplos de la presentación.
+El repositorio incluye un ejemplo con fastapi en la carpeta src y una carpeta con ejemplos de código en python de la presentación.
 
 El proyecto incluye:
 
