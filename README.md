@@ -1,58 +1,71 @@
 # Python Project Template
 
-This is a template for a Python project. It includes a basic structure for organizing your code, tests, and documentation.
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=23people-io_python-project-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=23people-io_python-project-template)
+Esta plantilla es un ejemplo de la estructura básica de un proyecto en Python.
 
-## Get Started
+Forma parte de la presentación de ["Introducción a Python"]([LICENSE](https://www.canva.com/design/DAHA1PesQ2o/EUIVCJNTx7DmD0sqrdzqVA/view?utm_content=DAHA1PesQ2o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1e9507b8c7)) realizada en 23people para desarrolladores con experiencia en otros lenguajes.
 
-### Prerequisites
+El proyecto incluye:
 
-- Python 3.12 or higher
-- uv
+- Un administrador de paquetes: [uv](https://docs.astral.sh/uv/)
+- Linter y Formatter: [ruff](https://docs.astral.sh/ruff/)
+- Chequeador de Tipos: [ty](https://docs.astral.sh/ty/)
+- Verifica que los mensajes de commit cumplan con ["Conventional Commits"](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
+- Incluye plugins sugeridos para el trabajo con VsCode
+
+## Comenzar
+
+### Pre-requisitos
+
+- [uv](https://docs.astral.sh/uv/)
+
+No es necesario que instales python previamente. UV instala la versión de python requerida por el proyecto.
 
 ### Installation
 
-1. Clone the repository:
+1. Clonar repositorio:
 
    ```bash
     git clone git@github.com:23people-io/python-project-template.git
     cd python-project-template
    ```
 
-2. Create an uv environment and activate it:
+2. Actualizar python, dependencias y configurar el virtual environment:
 
    ```bash
-    uv venv
-    source .venv/bin/activate
     uv sync
    ```
 
-3. Install pre-commit hooks:
+3. Instalar los hooks de pre-commit y chequear el código con ruff, ty, correr los tests, limitar el tamaño de archivos,  ["conventional commits"](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13):
 
    ```bash
+    source .venv/bin/activate
     pre-commit install
    ```
 
-Alternatively, you can run all commands from step 2 to step 3 with a single command:
+Alternativamente puedes ejecutar todos los comandos del paso 2 y 3 ejecutando el script:
 
 ```bash
    ./setup.sh
 ```
 
-1. Create a `.env` file in the root directory of the project:
+## Configuración
+
+1. Crar un archivo `.env` file en la raíz del proyecto y agregar lo siguiente:
 
 ```bash
    PORT=8000
 ```
 
-## Usage
+## Uso
 
-To run the main application, use the following command:
+Para correr la aplicación principal ejecuta el siguiente comando:
 
 ```bash
    uv run --env-file .env python run.py main.py
 ```
 
-Or alternatively, you can run the application with a single command:
+Alternativamente ejecuta:
 
 ```bash
    ./run.sh
@@ -60,30 +73,96 @@ Or alternatively, you can run the application with a single command:
 
 ## Testing
 
-To run the tests, use the following command:
+Para correr los tests ejecuta:
 
 ```bash
    uv run pytest --capture=no
 ```
 
-Or alternatively, you can run the tests with a single command:
+Alternativamente:
 
 ```bash
    ./test.sh
 ```
 
-## Linting
+## Linter y Tipos
 
-To lint the code, use the following command:
+Para chequear prácticas de código y type hints:
+
+```bash
+    uv run ruff check
+    uv run ty check
+```
+
+O alternativamente:
+
+```bash
+   ./lint.sh
+```
+
+## Chequear todo: linter, format, tipos y tests
+
+Para chequear todo con un sólo comando:
 
 ```bash
    uv run pre-commit run --all-files
 ```
 
-Or alternatively, you can run the linter with a single command:
+## Conventional Commits
+
+Los mensajes de commit deben comenzar por los siguientes prefijos:
+
+| Prefijo  | Descripcion                                      |
+| -----    | -----------                                      |
+| feat     | Nueva funcionalidad.                             |
+| fix      | Un bug fix.                                      |
+| docs     | Modificaciones sólo Documentación.               |
+| style    | Cambios de formato, espacios, punto y comas.     |
+| refactor | Refactorización.                                 |
+| perf     | Cambio en el código para mejorar la performance. |
+| test     | Agregar tests o corregir alguno existente.       |
+| build    | Cambios que afectan sólo al build.               |
+| chore    | Otros no clasificados.                           |
+
+
+Ejemplos:
 
 ```bash
-   ./lint.sh
+    git commit -m "feat: delete user by id"
+    git commit -m "fix: prevent crash when input is empty"
+    git commit -m "docs: update README with installation steps"
+    git commit -m "style: fix indentation in user service"
+    git commit -m "refactor: simplify validation logic"
+    git commit -m "perf: optimize database query for users"
+    git commit -m "test: add unit tests for login flow"
+    git commit -m "build: update webpack configuration"
+    git commit -m "chore: update dependencies"
+```
+
+Es posible utilzar scopes entre paréntesis para que el mensaje sea más claro y acotado.
+
+Ejemplos:
+
+```bash
+    git commit -m "feat(api): enable password reset endpoint"
+    git commit -m "fix(payment): correct currency conversion bug"
+    git commit -m "docs(api): add usage examples"
+    git commit -m "style(css): reorder class declarations"
+    git commit -m "refactor(auth): extract token generation logic"
+    git commit -m "perf(api): reduce response time for search endpoint"
+    git commit -m "test(auth): improve coverage for token service"
+    git commit -m "build(ci): configure GitHub Actions pipeline"
+
+```
+
+## Nuevo proyecto
+
+Si deseas partir un nuevo proyecto en python:
+
+```bash
+uv init mi-proyecto
+cd mi-proyecto
+uv add --dev ruff ty pytest
 ```
 
 ## License
