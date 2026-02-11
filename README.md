@@ -48,7 +48,7 @@ No es necesario que instales python previamente. UV instala la versión de pytho
 Alternativamente puedes ejecutar todos los comandos del paso 2 y 3 ejecutando el script:
 
 ```bash
-   ./setup.sh
+   ./run.sh setup
 ```
 
 ## Configuración
@@ -84,7 +84,7 @@ Para correr los tests ejecuta:
 Alternativamente:
 
 ```bash
-   ./test.sh
+   ./run.sh tests
 ```
 
 ## Linter y Tipos
@@ -99,7 +99,7 @@ Para chequear prácticas de código y type hints:
 O alternativamente:
 
 ```bash
-   ./lint.sh
+   ./run.sh lint
 ```
 
 ## Chequear todo: linter, format, tipos y tests
