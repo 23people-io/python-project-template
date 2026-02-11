@@ -1,6 +1,7 @@
 # Python Project Template
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=23people-io_python-project-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=23people-io_python-project-template)
+
 Esta plantilla es un ejemplo de la estructura básica de un proyecto en Python.
 
 Forma parte de la presentación de ["Introducción a Python"]([LICENSE](https://www.canva.com/design/DAHA1PesQ2o/EUIVCJNTx7DmD0sqrdzqVA/view?utm_content=DAHA1PesQ2o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1e9507b8c7)) realizada en 23people para desarrolladores con experiencia en otros lenguajes.
