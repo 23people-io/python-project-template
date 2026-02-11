@@ -10,6 +10,6 @@ def get_user(user_id: int) -> User:
 
 def create_user(user: User) -> User:
 
-    user_id: int = random.randint(10, 1000)  # noqa: S311
+    user_id: int = random.randint(10, 1000)  # noqa: S311 # NOSONAR
 
     return User(id=user_id, name=user.name, email=user.email)
