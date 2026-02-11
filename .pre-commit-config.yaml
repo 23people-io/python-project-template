@@ -14,9 +14,10 @@ repos:
       - id: ty
         stages: [pre-commit]
         name: ty check
-        entry: uvx ty check .
         language: system
         types: [python]
+        entry: uv run ty check
+        pass_filenames: false
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
@@ -26,13 +27,13 @@ repos:
 
   - repo: local
     hooks:
-    - id: pytest
-      name: pytest
-      entry: uv run pytest
-      args: [--capture=no, "--maxfail=1"]
-      language: system
-      types: [python]
-      pass_filenames: false
+      - id: pytest
+        name: pytest
+        entry: uv run pytest
+        args: [--capture=no, "--maxfail=1"]
+        language: system
+        types: [python]
+        pass_filenames: false
 
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v4.0.0
