@@ -6,11 +6,11 @@ from services import users_service
 router = APIRouter(prefix="/users", tags=["users"])
 
 
-@router.get("/{user_id}", response_model=User)
+@router.get("/{user_id}")
 async def get_user(user_id: int) -> User:
     return users_service.get_user(user_id)
 
 
-@router.post("/", response_model=User)
+@router.post("/")
 async def create_user(user: User) -> User:
     return users_service.create_user(user)
