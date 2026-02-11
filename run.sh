@@ -1,2 +1,2 @@
 #!/bin/bash
-uv run --env-file .env python run.py main.py
+uv run --env-file .env python src/run.py src/main.py

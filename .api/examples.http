@@ -1,32 +1,14 @@
-### Boolean Operators
-GET http://localhost:8000/examples/boolean-operators
+### Hello World
+GET http://localhost:8000/hello
 
-### Dictionaries
-GET http://localhost:8000/examples/dictionaries
+### Get User
+GET http://localhost:8000/users/123
 
-### For-While Loops
-GET http://localhost:8000/examples/for-while
+### Create User
+POST http://localhost:8000/users
+Content-Type: application/json
 
-### Functional Programming
-GET http://localhost:8000/examples/functional
-
-### Lists
-GET http://localhost:8000/examples/lists
-
-### OOP
-GET http://localhost:8000/examples/oop
-
-### Operators
-GET http://localhost:8000/examples/operators
-
-### Sets
-GET http://localhost:8000/examples/sets
-
-### Strings
-GET http://localhost:8000/examples/strings
-
-### Type Hints
-GET http://localhost:8000/examples/type-hints
-
-### Types
-GET http://localhost:8000/examples/types
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}

@@ -64,7 +64,7 @@ Alternativamente puedes ejecutar todos los comandos del paso 2 y 3 ejecutando el
 Para correr la aplicación principal ejecuta el siguiente comando:
 
 ```bash
-   uv run --env-file .env python run.py main.py
+   uv run --env-file .env python src/run.py src/main.py
 ```
 
 Alternativamente ejecuta:
