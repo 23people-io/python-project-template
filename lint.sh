@@ -1,1 +1,4 @@
-uv run pre-commit run --all-files
+#!/bin/bash
+uv run ruff check
+uv run ty check
+
