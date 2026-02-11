@@ -19,11 +19,11 @@ El proyecto incluye:
 
 ### Pre-requisitos
 
-- [uv](https://docs.astral.sh/uv/)
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 No es necesario que instales python previamente. UV instala la versión de python requerida por el proyecto.
 
-### Installation
+### Instalación
 
 1. Clonar repositorio:
 
